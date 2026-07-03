@@ -1,5 +1,7 @@
 # 🎓 Graduation Tickets
 
+🔗 **Live site: https://graduation-tickets.web.app**
+
 A simple website for buying and selling graduation/honor ceremony tickets among classmates, built for KFUPM's graduation ceremony.
 
 **Stack:** Next.js 14, React, Firebase (Auth + Firestore), Tailwind CSS
@@ -56,5 +58,12 @@ npm run dev
 ```
 Open http://localhost:3000
 
-## Deploy (optional)
-Push to GitHub and import the project on https://vercel.com — add the same `NEXT_PUBLIC_FIREBASE_*` env vars in Vercel project settings. Then in Firebase → Authentication → Settings → **Authorized domains**, add your Vercel URL.
+## Deploy
+Currently deployed to Firebase Hosting at https://graduation-tickets.web.app.
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+Make sure your deployed URL is added under Firebase → Authentication → Settings → **Authorized domains**.
